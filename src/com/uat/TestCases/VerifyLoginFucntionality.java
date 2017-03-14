@@ -47,9 +47,14 @@ public class VerifyLoginFucntionality
 		try{
 //	System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"\\src\\com\\uat\\config\\IEDriverServer.exe");
 //		driver = new InternetExplorerDriver(); 
-			System.setProperty("webdriver.firefox.driver", System.getProperty("user.dir")+"\\src\\com\\uat\\config\\firefox\\firefox");
-			System.out.println("System.getProperty(user.dir)=="+System.getProperty("user.dir"));
-		 driver = new FirefoxDriver();
+			//System.setProperty("webdriver.firefox.driver", System.getProperty("user.dir")+"\\src\\com\\uat\\config\\firefox\\firefox");
+			//System.out.println("System.getProperty(user.dir)=="+System.getProperty("user.dir"));
+		// driver = new FirefoxDriver();
+		File pathToBinary = new File(("usr.dir")+"src/com/uat/config/firefox/firefox-bin");
+		FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary);
+		FirefoxProfile firefoxProfile = new FirefoxProfile();       
+		driver = new FirefoxDriver(ffBinary,firefoxProfile);
+	
 		
 		//driver.get("https://click2cloud.sharepoint.com/sites/UAT/TestV2.0/");
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
