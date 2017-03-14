@@ -50,10 +50,10 @@ public class VerifyLoginFucntionality
 			//System.setProperty("webdriver.firefox.driver", System.getProperty("user.dir")+"\\src\\com\\uat\\config\\firefox\\firefox");
 			//System.out.println("System.getProperty(user.dir)=="+System.getProperty("user.dir"));
 		// driver = new FirefoxDriver();
-		File pathToBinary = new File(("usr.dir")+"src/com/uat/config/firefox/firefox-bin");
-		FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary);
-		FirefoxProfile firefoxProfile = new FirefoxProfile();       
-		driver = new FirefoxDriver(ffBinary,firefoxProfile);
+		//File pathToBinary = new File(("usr.dir")+"src/com/uat/config/firefox/firefox-bin");
+		//FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary);
+		//FirefoxProfile firefoxProfile = new FirefoxProfile();       
+		//driver = new FirefoxDriver(ffBinary,firefoxProfile);
 	
 		
 		//driver.get("https://click2cloud.sharepoint.com/sites/UAT/TestV2.0/");
