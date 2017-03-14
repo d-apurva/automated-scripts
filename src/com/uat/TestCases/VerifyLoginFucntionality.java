@@ -47,7 +47,7 @@ public class VerifyLoginFucntionality
 		try{
 //	System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"\\src\\com\\uat\\config\\IEDriverServer.exe");
 //		driver = new InternetExplorerDriver(); 
-			System.setProperty("webdriver.firefox.driver", System.getProperty("user.dir")+"\\src\\com\\uat\\config\\firefox.exe");
+			System.setProperty("webdriver.firefox.driver", System.getProperty("user.dir")+"\\src\\com\\uat\\config\\firefox\\firefox");
 			System.out.println("System.getProperty(user.dir)=="+System.getProperty("user.dir"));
 		 driver = new FirefoxDriver();
 		
